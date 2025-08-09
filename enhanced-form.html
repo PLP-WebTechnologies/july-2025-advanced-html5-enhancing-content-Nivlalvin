@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML5 Form</h1>
+        <p>This page demonstrates advanced html5 form features.</p>
+    </header>
+    <main>
+
+        <!--Ordered list-->
+        <section>
+            <h2>How to complete registration</h2>
+            <ol>
+                <li>Fill in your personal details.</li>
+                <li>Provide your contact information.</li>
+                <li>Choose a username and password.</li>
+                <li>Review and submit the form.</li>
+            </ol>
+        </section>
+
+        <!--Table-->
+        <section>
+            <h2>Avaliable Courses</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>3 months</td>
+                        <td>Ksh30000</td>
+                    </tr>
+                    <tr>
+                        <td>Data Science</td>
+                        <td>4 months</td>
+                        <td>Ksh40000</td>
+                    </tr>
+                    <tr>
+                        <td>Graphic Design</td>
+                        <td>2 months</td>
+                        <td>Ksh20000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--Media-->
+        <section>
+            <h2>Course Introduction Video</h2>
+            <video controls width="600">
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" alt="Flower video">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!--HTML5 Form-->
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="POST" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname" >First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name" required>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="\+254[0-9]{9}" required>
+
+                    <label for="email">Email: </label>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="Email" required>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password" minlength="8" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" minlength="8" required>
+
+                    <label for="account-id">Account ID:</label>
+                    <input type="text" id="account-id" name="account-id" value="AC2025-001" readonly>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="newsletter">Subscribe to Newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the terms and conditions
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your feedback here..."></textarea>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Enhanced HTML5 Form Example</p>
+    </footer>
+</body>
+</html>
